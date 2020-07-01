@@ -158,7 +158,15 @@
 		}
 	};
 
-
+   var saveDate = function(){
+   	console.log("sdsdsdsd");
+   	var n =  new Date();
+   	console.log(n);
+	var y = n.getFullYear();
+	var m = n.getMonth() + 1;
+	var d = n.getDate();
+	$('.datehoy').val(m + "/" + d + "/" + y);
+   }
 
 	var contentWayPoint = function() {
 		var i = 0;
@@ -209,6 +217,7 @@
 		burgerMenu();
 		toggleBtnColor();
 		contentWayPoint();
+		saveDate();
 	});
 
 
